@@ -10,7 +10,7 @@ aside h2{
     font-weight: bold;
 }
 #textBoxLarge{
-    padding: 0px 20px;
+    padding: 0px 5%;
     font-size: 1.4em;
 }
 #textBoxLarge h1{
@@ -32,16 +32,16 @@ aside h2{
 
 @media only screen and (min-width: 768px) {
     aside{
-        width: 250px;
+        width: 20%;
     }
     #textBoxLarge{
-        margin-left: 250px;
+        margin-left: 20%;
         padding: 0px 50px;
         font-size: 1.4em;
     }
     aside h2{
         display: block;
-        padding: 20px 0px 20px 50px;
+        padding: 20px 0px 20px 10%;
     }
     #textBoxLarge h1{
         font-size: clamp(2rem, 0.3906rem + 2.5000vw, 3rem);

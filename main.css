@@ -65,7 +65,7 @@ a:active {
     padding: 3% 0;
     margin: 0.83em 0;
     background-color: #86C232;
-    border: 3px #86C232 solid;
+    border: 4px #86C232 solid;
     text-decoration: none;
     transition: 0.3s;
 
@@ -117,6 +117,10 @@ aside {
     position: absolute;
     left: 1.5%;
     top: 2%;
+    
+}
+#menuButtonSVG{
+
 }
 .slideIn {
     left: -0%;
@@ -177,8 +181,8 @@ aside {
 
     #navbar a {
         width: auto;
-        padding: 60px 0;
-        padding-left: 50px;
+        padding: 25% 0;
+        padding-left: 10%;
     }
     #textBox{
         padding: 0;
