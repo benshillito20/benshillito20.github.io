@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    height: 100%;
+    color: #FFFFFF;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #222629;
+}
+
+html {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #222629;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: clamp(25pt, 4.5vw, 55pt);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: clamp(10pt, 2.5vw, 40pt);
+}
+
+#textBox {
+    position: absolute;
+    padding: auto;
+    text-align: center;
+    top: 45%;
+    width: 100%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#moreButton,
+#moreButton:visited,
+#moreButton:active {
+    font-size: clamp(5pt, 2vw, 35pt);
+    text-align: center;
+    display: block;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    padding: 3% 0;
+    margin: 0.83em 0;
+    background-color: #86C232;
+    border-style: solid;
+    border-color: #86C232;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+#moreButton:hover {
+    background-color: #222629;
+    transition: 0.5s;
+}
+
+aside {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #474B4F;
+    z-index: 2;
+}
+
+#navbar {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background: #474B4F;
+    font-size: 1.7em;
+}
+
+#navbar a {
+    padding: 60px 0;
+    padding-left: 10%;
+    display: block;
+    transition: 0.5s;
+    border-right: 5px solid #61892F;
+    background: #6B6E70;
+}
+
+#navbar a:hover {
+    border-right: 5px solid #86C232;
+    transition: 0.5s;
+    color: #86C232;
+}
+
+#leftArrow {
+    position: absolute;
+    right: 3%;
+    bottom: 1%;
+}
+
+.transparentOverlayActive {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.transparentOverlayInactive {
+    transition: 0.5s;
+}
+
+#transparentOverlay {
+    transition: 0.5s;
+}
+#menuButton{
+    position: absolute;
+    left: 1.5%;
+    top: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background: #222629 url(images/bg.svg) no-repeat bottom right;
+        background-size: auto 100%;
+    }
+
+    #textBox {
+        text-align: left;
+        left: 10%;
+        top: 45%;
+        width: 30%;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: clamp(25pt, 4.5vw, 55pt);
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: clamp(10pt, 2.5vw, 40pt);
+    }
+
+    #moreButton,
+    #moreButton:visited,
+    #moreButton:active {
+        font-size: clamp(5pt, 2vw, 35pt);
+    }
+
+    aside {
+        width: 250px;
+    }
+
+    #navbar a {
+
+        width: auto;
+        padding: 60px 0;
+        padding-left: 50px;
+    }
+
+    @keyframes slideIn {
+        0.0% {
+            transform: translate(-250px);
+        }
+
+        1.3% {}
+    }
+    @keyframes slideOut{
+        0.0% {
+            transform: translate(0);
+        }
+
+        1.3% {
+            transform: translate(250px);
+        }
+    }
+
+    .slideIn {
+        left: -250px;
+        transform: translateX(250px);
+        translate: 0.5s;
+    }
+    .slideOut{
+        transition: 0.5s;
+        transform: translateX(-250px);
+        left: 0px;
+    }
+}

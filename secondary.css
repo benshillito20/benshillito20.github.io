@@ -1,0 +1,22 @@
+aside{
+    position: fixed;
+}
+#navbar h2{
+    color: #ffffff;
+    width: 100%;
+    padding-left: 50px;
+    font-size: 1.7em;
+}
+#textBoxLarge{
+    margin-left: 250px;
+    padding: 0px 50px;
+    font-size: 1.4em;
+}
+#textBoxLarge h1{
+    font-size: clamp(2rem, 0.3906rem + 2.5000vw, 3rem);
+    margin-top: 0px;
+    padding-top: 0.67em;
+}
+#textBoxLarge p{
+    font-size: clamp(1rem, -0.2875rem + 2.0000vw, 1.8rem);
+}
