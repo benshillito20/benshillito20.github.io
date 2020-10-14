@@ -154,13 +154,13 @@ aside {
         width: 30%;
     }
 
-    h1 {
+    #textBox h1 {
         font-weight: bold;
         font-size: clamp(25pt, 4.5vw, 55pt);
         text-transform: uppercase;
     }
 
-    h2 {
+    #textBox h2 {
         font-weight: normal;
         font-size: clamp(10pt, 2.5vw, 40pt);
     }
