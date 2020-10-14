@@ -5,8 +5,9 @@
 }
 
 main {
-    height: 100%;
+    height: auto;
     color: #FFFFFF;
+    min-height: 100%;
 }
 
 body,
@@ -24,20 +25,20 @@ html {
     background-color: #222629;
 }
 
-h1 {
+#textBox h1 {
     font-weight: bold;
-    font-size: clamp(25pt, 4.5vw, 55pt);
+    font-size: 3em;
     text-transform: uppercase;
 }
 
-h2 {
+#textBox h2 {
     font-weight: normal;
-    font-size: clamp(10pt, 2.5vw, 40pt);
+    font-size: 1.5em;
 }
 
 #textBox {
     position: absolute;
-    padding: auto;
+    padding: 0 20%;
     text-align: center;
     top: 45%;
     width: 100%;
@@ -55,7 +56,7 @@ a:active {
 #moreButton,
 #moreButton:visited,
 #moreButton:active {
-    font-size: clamp(5pt, 2vw, 35pt);
+    font-size: 1.5em;
     text-align: center;
     display: block;
     position: relative;
@@ -64,8 +65,7 @@ a:active {
     padding: 3% 0;
     margin: 0.83em 0;
     background-color: #86C232;
-    border-style: solid;
-    border-color: #86C232;
+    border: 3px #86C232 solid;
     text-decoration: none;
     transition: 0.3s;
 
@@ -93,7 +93,7 @@ aside {
 }
 
 #navbar a {
-    padding: 60px 0;
+    padding: 30% 0;
     padding-left: 10%;
     display: block;
     transition: 0.5s;
@@ -113,26 +113,32 @@ aside {
     bottom: 1%;
 }
 
-.transparentOverlayActive {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    position: absolute;
-    transition: 0.5s;
-}
-
-.transparentOverlayInactive {
-    transition: 0.5s;
-}
-
-#transparentOverlay {
-    transition: 0.5s;
-}
 #menuButton{
     position: absolute;
     left: 1.5%;
     top: 2%;
+}
+.slideIn {
+    left: -0%;
+    transform: translateX(0%);
+    transition: 0.5s;
+}
+.slideOut{
+    transition: 0.5s;
+    transform: translateX(-100%);
+    left: 0px;
+}
+#transparentOverlay{
+    z-index:1;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: rgb(0, 0, 0,0.5);
+    opacity:0.8;
+    transition: 0.5s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -166,16 +172,17 @@ aside {
     }
 
     aside {
-        width: 250px;
+        width: 20%;
     }
 
     #navbar a {
-
         width: auto;
         padding: 60px 0;
         padding-left: 50px;
     }
-
+    #textBox{
+        padding: 0;
+    }
     @keyframes slideIn {
         0.0% {
             transform: translate(-250px);
@@ -193,14 +200,5 @@ aside {
         }
     }
 
-    .slideIn {
-        left: -250px;
-        transform: translateX(250px);
-        translate: 0.5s;
-    }
-    .slideOut{
-        transition: 0.5s;
-        transform: translateX(-250px);
-        left: 0px;
-    }
+
 }

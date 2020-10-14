@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ben Shillito</title>
+    <title>Ben Shillito - About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="secondary.css">
 </head>
 
 <body>
-    <aside class="slideIn">
+    <aside class="slideOut">
+        <h2>Ben Shillito</h2>
         <ul id="navbar">
-            <h2>Ben Shillito</h2>
             <a href="index.html">
                 <div>Home</div>
             </a>
@@ -24,9 +24,27 @@
                 <div>My skills</div>
             </a>
         </ul>
+        <a href="#" id="leftArrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="5" y1="12" x2="11" y2="18" />
+                <line x1="5" y1="12" x2="11" y2="6" />
+            </svg>
+        </a>
     </aside>
     <main>
-        <div id="transparentOverlay" class="transparentOverlayInactive"></div>
+        <div id="transparentOverlay"></div>
+        <a id="menuButton" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+        </a>
         <div id="textBoxLarge">
             <h1>About</h1>
             <p>
@@ -41,7 +59,7 @@
         </div>
     </main>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
